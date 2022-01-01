@@ -16,6 +16,7 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(sh_sfp_interfaces
+    "action/DownloadAudio.action"
     "msg/PlaybackCommand.msg"
     "msg/PlaybackUpdate.msg"
     DEPENDENCIES builtin_interfaces

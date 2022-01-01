@@ -1,0 +1,21 @@
+# An action used to request the download of a YouTube video's audio
+
+# Constants to define allowable qualities for the download
+uint8 QUALITY_UNSET=0
+uint8 QUALITY_64=1
+uint8 QUALITY_128=2
+uint8 QUALITY_192=3
+uint8 QUALITY_256=4
+uint8 QUALITY_320=5
+
+# The URL of the video whose audio we want to download
+string yt_url
+# The desired download quality
+uint8 quality
+---
+# The absolute file path of the download, if successful
+# The codec, etc. can be extrapolated from the file extension
+string local_url
+---
+# The status of the download, as a percentage in the domain [0,100]
+float64 completion
