@@ -8,8 +8,8 @@ uint8 QUALITY_192=3
 uint8 QUALITY_256=4
 uint8 QUALITY_320=5
 
-# The URL of the video whose audio we want to download
-string yt_url
+# The ID of the video to download, uniquely identified by YouTube
+string video_id
 # The desired download quality
 uint8 quality
 ---
