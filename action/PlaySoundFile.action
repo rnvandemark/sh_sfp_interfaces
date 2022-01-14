@@ -1,0 +1,10 @@
+# An action used to play a sound file by file name
+
+# The local path of the sound file
+string local_url
+---
+# Whether or not this playback finished because of a STOP command
+bool was_stopped
+---
+# An update on the sound file as it plays
+PlaybackUpdate update

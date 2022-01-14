@@ -1,0 +1,14 @@
+# Requests to interact with the sound file player.
+
+# The possible types of commands to send
+uint8 NONE=1
+uint8 STOP=2
+uint8 PAUSE=3
+uint8 RESUME=4
+uint8 SKIP=5
+
+# The requested command
+uint8 cmd
+---
+# Whether or not the requested command was successful
+bool success
