@@ -10,12 +10,16 @@ uint8 QUALITY_320=5
 
 # The ID of the video to download, uniquely identified by YouTube
 string video_id
+# The list of desired file formats to download the audio to
+sh_common_interfaces/StringArr file_formats
 # The desired download quality
 uint8 quality
 ---
-# The absolute file path of the download, if successful
-# The codec, etc. can be extrapolated from the file extension
-string local_url
+# The absolute file paths as a result of the download
+# There is a 1 to 1 correlation between this and the formats in the request,
+# if creating a file of a specified format failed, then the string is empty
+# The codec, etc. can be extrapolated from each file extension
+sh_common_interfaces/StringArr local_urls
 ---
 # The status of the download, as a percentage in the domain [0,100]
 float64 completion
