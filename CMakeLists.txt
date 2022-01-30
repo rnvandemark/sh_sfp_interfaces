@@ -13,16 +13,14 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
-find_package(unique_identifier_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(sh_sfp_interfaces
     "action/DownloadAudio.action"
     "action/PlaySoundFile.action"
-    "msg/BeginPlayback.msg"
     "msg/PlaybackUpdate.msg"
     "srv/RequestPlaybackCommand.srv"
-    DEPENDENCIES builtin_interfaces unique_identifier_msgs
+    DEPENDENCIES builtin_interfaces
 )
 
 ament_package()
