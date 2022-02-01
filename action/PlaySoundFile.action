@@ -1,7 +1,7 @@
 # An action used to play a sound file by file name
 
-# The local path of the sound file
-string local_url
+# The characteristics found of the audio at the specified URL
+LabeledAudioCharacteristics labeled_audio_characteristics
 ---
 # Whether or not this playback finished because of a STOP command
 bool was_stopped
