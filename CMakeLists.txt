@@ -17,9 +17,14 @@ find_package(sh_common_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(sh_sfp_interfaces
+    "action/AnalyzeSoundFile.action"
     "action/DownloadAudio.action"
     "action/PlaySoundFile.action"
+    "msg/AudioCharacteristics.msg"
+    "msg/OnsetDetectionAlgorithms.msg"
     "msg/PlaybackUpdate.msg"
+    "msg/RhythmDetectionAlgorithms.msg"
+    "msg/WindowingAlgorithms.msg"
     "srv/RequestPlaybackCommand.srv"
     DEPENDENCIES builtin_interfaces sh_common_interfaces
 )

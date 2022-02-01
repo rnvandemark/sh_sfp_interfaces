@@ -1,0 +1,36 @@
+# A request to perform analysis on a given audio file with the given configuration
+
+# The local path of the sound file
+string local_url
+
+# The onset detection algorithm to use
+OnsetDetectionAlgorithms onset
+
+# The rhythm detection algorithm to use
+RhythmDetectionAlgorithms rhythm
+
+# The window algorithm to use
+WindowingAlgorithms window
+
+---
+
+# The characteristics of the audio that were found
+AudioCharacteristics characteristics
+
+---
+
+# The analysis has started
+uint8 STATUS_STARTED=1
+# The audio to analyze finished loading and analysis can start
+uint8 STATUS_AUDIO_LOADED=2
+# The analysis' onset detection finished
+uint8 STATUS_FINISHED_ONSET_DETECTION=3
+# The analysis' beat detection finished
+uint8 STATUS_FINISHED_BEAT_DETECTION=4
+# The analysis' pitch detection finished
+uint8 STATUS_FINISHED_PITCH_DETECTION=5
+# The analysis' entire pipeline finished
+uint8 STATUS_FINISHED_ANALYSIS=6
+
+# The analysis milestone that was most recently completed
+uint8 status
