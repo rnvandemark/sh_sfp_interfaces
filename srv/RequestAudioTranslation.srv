@@ -1,0 +1,16 @@
+# Requests to translate audio from characteristics to some visualization.
+
+# The input characteristics of the audio
+AudioCharacteristics characteristics
+
+# The number of actors that the audio gets translated into
+int32 num_actors
+
+---
+
+# Whether or not the translation was successful and the remaining outputs are
+# valid
+bool success
+
+# The resulting visualization
+AudioVisualization visualization

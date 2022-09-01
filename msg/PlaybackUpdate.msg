@@ -1,5 +1,8 @@
 # An update on the sound file currently playing
 
+# The unique video ID of the audio that is playing
+string video_id
+
 # Whether or not the current sound file's playback is paused
 bool is_paused
 

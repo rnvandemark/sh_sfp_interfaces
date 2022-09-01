@@ -21,11 +21,14 @@ rosidl_generate_interfaces(sh_sfp_interfaces
     "action/DownloadAudio.action"
     "action/PlaySoundFile.action"
     "msg/AudioCharacteristics.msg"
+    "msg/AudioVisualization.msg"
     "msg/LabeledAudioCharacteristics.msg"
+    "msg/LabeledAudioVisualization.msg"
     "msg/OnsetDetectionAlgorithms.msg"
     "msg/PlaybackUpdate.msg"
     "msg/RhythmDetectionAlgorithms.msg"
     "msg/WindowingAlgorithms.msg"
+    "srv/RequestAudioTranslation.srv"
     "srv/RequestPlaybackCommand.srv"
     DEPENDENCIES builtin_interfaces sh_common_interfaces
 )
